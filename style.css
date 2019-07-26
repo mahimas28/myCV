@@ -166,4 +166,32 @@ hr{
     border-style: inset;
     border-width: 1px;
 }
+
+ @media (max-width:1028px) {
+        h1 {
+            font-size: 4rem;
+            top: 100px;
+            position: relative;
+        }
+        .top h2{
+            position: relative;
+            top: 100px;
+            
+        }
+
+        .cloud1 {
+            position:absolute;
+            height: 150px;
+            width: 150px;
+            right: 20px;
+            top: 40px;
+        }
+
+        .cloud2 {
+            position: absolute;
+            left: 20px;
+            height: 150px;
+            width: 150px;
+        }
+    }
     
