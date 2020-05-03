@@ -158,16 +158,15 @@ hr{
 	top:1px;
 }
 .project{
-    background-color: rgba(108, 206, 206, 0.79);
-    width: 40%;
+    background-color: white;
+    width: 80%;
     margin:20px  auto;
     padding:5px 20px ;
     border-radius: 20px;
     border-style: inset;
     border-width: 1px;
 }
-
- @media (max-width:1028px) {
+    @media (max-width:1028px) {
         h1 {
             font-size: 4rem;
             top: 100px;
@@ -194,4 +193,40 @@ hr{
             width: 150px;
         }
     }
-    
+
+.myprojects{
+    background-color: dimgrey;
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.56); /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -50px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.5s; /* Transition effect when sliding down (and up) */
+    z-index: 1;
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+    font-family:  monospace;
+    letter-spacing: 3px;
+}
+
+#navbar a:hover {
+/*  background-color: #ddd;*/
+  color: #11b5f0;
+}
+
+.card{
+    z-index: 0;
+    box-shadow: 0px 10px 14px -7px rgba(19, 19, 20, 0.94);
+}

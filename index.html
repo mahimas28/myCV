@@ -2,12 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Julius+Sans+One|Open+Sans|Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="web.js"></script>
+
     <title>Mahima🌼</title>
 </head>
+
 <body>
+  
+<!--  navbar-->
+<div id="navbar">
+    <a href="#contact">Contact</a>
+    <a href="#project">Projects</a>
+        <a href="#about">About</a>
+
+</div>
+<!---------------->   
+   
     <div class="top">
       <img class="cloud1" src="images/clouds.png" alt="clouds_img">
       
@@ -17,11 +43,14 @@
        <img  class="cloud2" src="images/clouds.png" alt="clouds_img">
        <img src="images/mountains.png" alt="mountain_img" style="height: 500px; width: 500px;">
     </div>
+    
+    
+    
    <div class="middle-container">
-  <div class="profile">
+  <div class="profile" id="about">
     <img src="images/chinese.png" alt="" style="height: 200px; width: 200px;">
     <h2>Hello.</h2>
-    <p class="intro">I'm a final year engineeing student aspiring to get hired as a web developer .  </p>
+    <p class="intro">I'm a final year engineeing student aspiring to get hired as a web developer .</p>
   </div>
   <hr>
   <div class="skills">
@@ -29,37 +58,66 @@
     <div class="skill-row1">
       <img class="codeimg" src="images/code.png" alt="">
       <h3>Academic Skills</h3>
-      <p class="codepara">JAVA , PYTHON, C++ , Ethical Hacking , Cyber Security , Linux , Web Development (HTML, CSS, JAVASCRIPT, SQL, PHP, NODE.JS).</p>
+<!--      <p class="codepara">-->
+      <ul>
+          <li>Full Stack web Development</li>
+          <li>Coding Proficiency - Major JAVA</li>
+          <li>Cyber Security</li>
+      </ul>
+    
     </div>
     <div class="skill-row2">
       <img class="skillimg" src="images/heart.png" alt="">
       <h3>Non-Academic Skills</h3>
-      <p class="skillpara">I love doing sketching and you can call me an artist.</p>
+      <p class="skillpara">I make art and build stuff. </p>
+      <a href="https://www.instagram.com/duende_ms/?igshid=unhxlvgdzser">Do checkout.</a>
     </div>
   </div>
   <hr>
-  <div class="myprojects">
-    <h2>My Projects.</h2>
-    <div class="project">
-    <h3>Track-ERR</h3>
-    <p class="contactmsg">It is a secure derailment tracker for Indian railways that incorporates the hardware as well as a software system . The hardware consists of the integrated circuit of raspberry pi and sensors. this project is largely based on constraining the weight of the train so it will overcome the chances of train accidents.</p>
-      </div>
-    <div class="project">
-     <h3>WebCam Monitoring</h3>
-    <p class="contactmsg">Detection of any hindrance caused by external interference or internal technical issues in the camera( basically surveillance camera ) for security purposes.</p>
-      </div>
-      <div class="project">
-     <h3>On Road</h3>
-    <p class="contactmsg">Analysis of road accidents and the generation of association rules to provide a detailed and accurate report for crash investigation with relevant risk management practices.</p>
-      </div>
-      <div class="project">
-    
-     <h3>Honeypot</h3>
-      <p class="contactmsg">Worked as the front end developer under <span><a href="https://www.cyberpeace.org/" target="_blank">Cyber Peace Foundation</a></span> during the training period of my internship on the project of Honeypot.</p>
-      </div>
-  </div>
+   
+   <div class="myprojects" id="project">
+       <h2>My Projects.</h2>
+       <div class="row">
+           <div class="col-sm-6">
+               <div class="card project">
+                   <div class="card-body">
+                       <h5 class="card-title">Checkpoint R80</h5>
+                       <p class="card-text">A portal build for the organization basically for BYOD setup .Mainly to manage and administrate the activities of the students by the teachers in the given network.</p>
+                       <a href="https://github.com/mahimas28/checkpoint-master" class="btn btn-primary">Link</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-6" >
+               <div class="card project">
+                   <div class="card-body">
+                       <h5 class="card-title">Cyber Kawach</h5>
+                       <p class="card-text">Worked as the front end developer under <span><a href="https://www.cyberpeace.org/" target="_blank">Cyber Peace Foundation</a></span> during the training period of my internship on the project of Honeypot.</p>
+                       <a href="https://github.com/apsychogirl/The-HoneyPot" class="btn btn-primary">Link</a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-6">
+               <div class="card project">
+                   <div class="card-body">
+                       <h5 class="card-title">On Road</h5>
+                       <p class="card-text">Analysis of road accidents and the generation of association rules to provide a detailed and accurate report for crash investigation with relevant risk management practices.</p>
+                       <a href="https://github.com/mahimas28" class="btn btn-primary">Link</a>
+                   </div>
+               </div>
+           </div>
+            <div class="col-sm-6">
+               <div class="card project">
+                   <div class="card-body">
+                       <h5 class="card-title">Track-ERR</h5>
+                       <p class="card-text">It is a secure derailment tracker for Indian railways that incorporates the hardware as well as a software system. This project is largely based on constraining the weight of the train so it will overcome the chances of train accidents.</p>
+                       <a href="https://github.com/mahimas28/Track.err" class="btn btn-primary">Link</a>
+                   </div>
+               </div>
+           </div>
+       </div>    
+   </div>
   <hr>
-  <div class="contact-me">
+  <div class="contact-me" id="contact" >
     <h2>Get In Touch.</h2>
 <!--
     <h3>.</h3>
